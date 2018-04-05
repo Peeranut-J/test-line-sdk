@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 /**
  * Copyright 2016 LINE Corporation
@@ -156,7 +156,7 @@ class TextMessageHandler implements EventHandler
                 );
                 $this->bot->replyMessage($replyToken, $imagemapMessageBuilder);
                 break;
-			/*case 'ขอดูผลการวินิจฉัย':
+			case 'ขอดูผลการวินิจฉัย':
 				$this->bot->replyText($replyToken, 'ขณะนี้ ผลการวินิจฉัย ต้องให้แพทย์เป็นผู้ส่งไปทางอีเมลล์ที่ได้ลงทะเบียนไว้');
                 break;
 			case 'ขอรายชื่อโรงพยาบาลที่เกี่ยวข้อง':
