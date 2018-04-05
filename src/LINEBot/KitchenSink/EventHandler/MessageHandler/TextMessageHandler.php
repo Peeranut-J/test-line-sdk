@@ -156,6 +156,7 @@ class TextMessageHandler implements EventHandler
                 );
                 $this->bot->replyMessage($replyToken, $imagemapMessageBuilder);
                 break;
+<<<<<<< HEAD
 			case 'ขอดูผลการวินิจฉัย':
 				$this->bot->replyText($replyToken, 'ขณะนี้ ผลการวินิจฉัย ต้องให้แพทย์เป็นผู้ส่งไปทางอีเมลล์ที่ได้ลงทะเบียนไว้');
                 break;
@@ -171,6 +172,10 @@ class TextMessageHandler implements EventHandler
             default:
                 $this->echoBack($replyToken, $text);
 				//$this->bot->replyText($replyToken, 'หากมีคำถาม หรือต้องการใช้บริการอะไร กรุณากดปุ่มใน App Menu หรือหากต้องการตรวจต้อหินเบื้องต้น กรุณาส่งรูปภาพ ขอบคุณครับ');
+=======
+            default:
+                $this->echoBack($replyToken, $text);
+>>>>>>> parent of 106585f... add some text
                 break;
         }
     }
