@@ -47,6 +47,7 @@ class StickerMessageHandler implements EventHandler
 
     public function handle()
     {
+        log("Sticker handler in");
         $replyToken = $this->stickerMessage->getReplyToken();
         $packageId = $this->stickerMessage->getPackageId();
         $stickerId = $this->stickerMessage->getStickerId();
